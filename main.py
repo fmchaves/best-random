@@ -1,9 +1,8 @@
-from src.server.instance import server
-from src.controllers import *
+from flask import Flask
 
-@server.app.route('/')
+app = Flask(__main__)
+
+
+@app.route('/')
 def index():
-    return "<h1>Welcome to Best Random API</h1>"
-
-if __name__ == '__main__':
-    server.run(True)
+    return '<h1>Best Random APP</h1>'
