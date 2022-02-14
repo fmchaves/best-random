@@ -1,12 +1,5 @@
-from flask import Flask
-
-app = Flask(__name__)
-
-
-@app.route('/')
-def home():
-    return '<h1>Python Flask App</h1>'
-
+from src.server.instance import server
+from src.controllers import *
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    server.run()
