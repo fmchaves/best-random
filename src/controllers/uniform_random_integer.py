@@ -48,6 +48,8 @@ def uniform_random_integer():
         output['range_width'] = default_params['range_width']['value']
         output['sample_size'] = default_params['sample_size']['value']
 
+    print(output)
+    
     output['status'] = 200
     output['request_url'] = request.url
     output['numbers'] = [
